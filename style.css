@@ -1,0 +1,8 @@
+h1 {
+  color: red;  /*bootstrap over-rode this*/
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
