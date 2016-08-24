@@ -1,3 +1,7 @@
 "use strict";
+let battledomePlayer = require('./player.js');
+let battledomeRobotClass = require('./robots.js');
 
-console.log("Javascript is on deck");
+
+let Player1 = new Battledome.Combatants.Player();
+console.log(Player1);

@@ -35,3 +35,5 @@ BattleBot.Combatants.Enemy = function() {
 };
 
 BattleBot.Combatants.Enemy.prototype = new BattleBot.Combatants.Fighters();
+
+module.exports = Battlebot;

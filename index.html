@@ -7,16 +7,102 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <h2>Ladies and Gentlemen, boys and girls:</h2>
-  <h1>Dying Time's Here</h1>
-  <div class="container">
-    <div class="well">
-      <h6>BATTLEDOME</h6>
+
+  <article id="game-container">
+    <!-- welcome Page -->
+    <div id="welcome-page">
+      <div class="container">
+        <h1>Welcome to the Battledome!</h1>
+        <div class="well">
+          <label>Tell me your name:</label>
+          <input type="text" id="getName">
+          <label>What do you want to name your opponent:</label>
+          <input type="text" id="opponentName">
+
+          <div id="name_button" class="card__button">
+            <a class="card__link btn btn--big   btn--orange"
+              href="#"
+              next="card--class">
+              <span class="btn__prompt"></span>
+              <span class="btn__text">Select Robot</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+    <!-- choose robot fighter page -->
+    <div id="choose-page">
+      <h1>Choose your Battle Bot</h1>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-2">
+
+            <div id="brownBear" class="card__button">
+              <a class="class__link btn btn--big btn--blue" href="#">
+                <span class="btn__prompt"></span>
+                <span class="btn__text">Brown Bear</span>
+              </a>
+            </div>
+
+            <div id="polarBear" class="card__button">
+              <a class="class__link btn btn--big btn--blue" href="#">
+                <span class="btn__prompt"></span>
+                <span class="btn__text">Polar Bear</span>
+              </a>
+            </div>
+
+            <div id="android" class="card__button">
+              <a class="class__link btn btn--big btn--blue" href="#">
+                <span class="btn__prompt"></span>
+                <span class="btn__text">Android</span>
+              </a>
+            </div>
+
+            <div id="elf" class="card__button">
+              <a class="class__link btn btn--big btn--blue" href="#">
+                <span class="btn__prompt"></span>
+                <span class="btn__text">Elf</span>
+              </a>
+            </div>
+
+            <div id="blackWidow" class="card__button">
+              <a class="class__link btn btn--big btn--blue" href="#">
+                <span class="btn__prompt"></span>
+                <span class="btn__text">Black Widow</span>
+              </a>
+            </div>
+
+            <div id="brownRecluse" class="card__button">
+              <a class="class__link btn btn--big btn--blue" href="#">
+                <span class="btn__prompt"></span>
+                <span class="btn__text">Brown Recluse</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="card__button">
+        <a class="card__link btn btn--big btn--orange"    href="#"
+            next="card--battleground">
+              <span class="btn__prompt"></span>
+              <span class="btn__text">To the Battle Dome!</span>
+        </a>
+      </div>
+    </div>
+    <!-- battledome page -->
+    <div id="fight-page">
+      <h2>Ladies and Gentlemen, boys and girls:</h2>
+      <h1>Dying Time's Here</h1>
+    <div id="battleHere"></div>
+
+
+
+    </div>
+  </article>
+
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="scripts/js.js"></script>
-  <script type="text/javascript" src="scripts/robot.js"></script>
+  <script type="text/javascript" src="dist/app.js"></script>
 </body>
 </html>
