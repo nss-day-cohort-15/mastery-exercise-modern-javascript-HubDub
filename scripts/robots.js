@@ -1,4 +1,5 @@
 "use strict";
+let $ = require('jquery');
 //this is the base robot function
 let BattleBot = BattleBot || {};
 BattleBot.BotBarn = {};
@@ -70,4 +71,4 @@ BattleBot.BotBarn.BrownRecluse = function() {
 };
 BattleBot.BotBarn.BrownRecluse.prototype = new BattleBot.BotBarn.SpiderClass();
 
-module.exports = BattleBot;
+// module.exports = BattleBot;

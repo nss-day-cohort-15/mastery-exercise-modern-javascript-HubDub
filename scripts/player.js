@@ -1,5 +1,5 @@
 "use strict";
-
+let $ = require('jquery');
 let BattleBot = BattleBot || {};
 BattleBot.Combatants = {};
 
@@ -36,4 +36,4 @@ BattleBot.Combatants.Enemy = function() {
 
 BattleBot.Combatants.Enemy.prototype = new BattleBot.Combatants.Fighters();
 
-module.exports = Battlebot;
+// module.exports = Battlebot;
