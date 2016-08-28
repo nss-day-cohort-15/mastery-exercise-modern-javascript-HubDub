@@ -1,5 +1,4 @@
 "use strict";
-let $ = require('jquery');
 // let battledomePlayer = require('./player.js');
 // let battledomeRobotClass = require('./robots.js');
 

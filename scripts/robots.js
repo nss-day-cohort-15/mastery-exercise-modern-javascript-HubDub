@@ -1,5 +1,5 @@
 "use strict";
-let $ = require('jquery');
+
 //this is the base robot function
 let BattleBot = BattleBot || {};
 BattleBot.BotBarn = {};
