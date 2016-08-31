@@ -10,7 +10,7 @@
 
   <article id="game-container">
     <!-- welcome Page -->
-    <div id="welcome-page">
+    <div class="welcome-page">
       <div class="container">
         <h1>Welcome to the Battledome!</h1>
         <div class="well">
@@ -19,82 +19,70 @@
           <label>What do you want to name your opponent:</label>
           <input type="text" id="opponentName">
 
-          <div id="name_button" class="card__button">
-            <a class="card__link btn btn--big   btn--orange"
+          <button id="name_button" class="card_link btn btn-big btn-warning center-block">
+            <a
               href="#"
-              next="card--class">
+              next="choose-bot">
               <span class="btn__prompt"></span>
               <span class="btn__text">Select Robot</span>
             </a>
-          </div>
+          </button>
         </div>
       </div>
     </div>
     <!-- choose robot fighter page -->
-    <div id="choose-page">
+    <div class="choose-bot">
       <h1>Choose your Battle Bot</h1>
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
-          <div class="col-sm-2">
 
-            <div id="brownBear" class="card__button">
-              <a class="class__link btn btn--big btn--blue" href="#">
-                <span class="btn__prompt"></span>
-                <span class="btn__text">Brown Bear</span>
-              </a>
-            </div>
+          <div class="col-sm-4">
+            <button id="brownBear" class="card_button btn btn--big btn-success">
+              <a href="#">Brown Bear</a>
+            </button>
 
-            <div id="polarBear" class="card__button">
-              <a class="class__link btn btn--big btn--blue" href="#">
-                <span class="btn__prompt"></span>
-                <span class="btn__text">Polar Bear</span>
-              </a>
-            </div>
-
-            <div id="android" class="card__button">
-              <a class="class__link btn btn--big btn--blue" href="#">
-                <span class="btn__prompt"></span>
-                <span class="btn__text">Android</span>
-              </a>
-            </div>
-
-            <div id="elf" class="card__button">
-              <a class="class__link btn btn--big btn--blue" href="#">
-                <span class="btn__prompt"></span>
-                <span class="btn__text">Elf</span>
-              </a>
-            </div>
-
-            <div id="blackWidow" class="card__button">
-              <a class="class__link btn btn--big btn--blue" href="#">
-                <span class="btn__prompt"></span>
-                <span class="btn__text">Black Widow</span>
-              </a>
-            </div>
-
-            <div id="brownRecluse" class="card__button">
-              <a class="class__link btn btn--big btn--blue" href="#">
-                <span class="btn__prompt"></span>
-                <span class="btn__text">Brown Recluse</span>
-              </a>
-            </div>
-
+            <button id="polarBear" class="card_button btn btn-big btn-success">
+              <a href="#">Polar Bear</a>
+            </button>
           </div>
+
+          <div class="col-sm-4">
+            <button id="android" class="card_button btn btn-big btn-success">
+              <a href="#">Android</a>
+            </button>
+
+            <button id="elf" class="card_button btn btn-big btn-success">
+              <a href="#">Elf</a>
+            </button>
+          </div>
+
+
+          <div class="col-sm-4">
+            <button id="blackWidow" class="card_button btn btn-big btn-success">
+              <a href="#">Black Widow</a>
+            </button>
+
+            <button id="brownRecluse" class="card_button btn btn-big btn-success">
+              <a href="#">Brown Recluse</a>
+            </button>
+          </div>
+
         </div>
       </div>
-      <div class="card__button">
-        <a class="card__link btn btn--big btn--orange"    href="#"
-            next="card--battleground">
+      <button class="card_link btn btn-big btn-warning center-block">
+        <a href="#"
+            next="battleground">
               <span class="btn__prompt"></span>
               <span class="btn__text">To the Battle Dome!</span>
         </a>
-      </div>
+      </button>
     </div>
     <!-- battledome page -->
-    <div id="fight-page">
+    <div id="fight-page" class="battleground">
       <h2>Ladies and Gentlemen, boys and girls:</h2>
       <h1>Dying Time's Here</h1>
     <div id="battleHere"></div>
+    <button class="fight btn big-btn btn-danger center-block">FIGHT!!</button>
 
 
 

@@ -1,8 +1,9 @@
 "use strict";
 
 //this is the base robot function
-let BattleBot = BattleBot || {};
-BattleBot.BotBarn = {};
+// let BattleBot = BattleBot || {};
+let BattleBot = {};
+// BattleBot.BotBarn = {};
 
 //base for a BattleBot class
 BattleBot.BotBarn.BotClass = function() {
@@ -71,4 +72,4 @@ BattleBot.BotBarn.BrownRecluse = function() {
 };
 BattleBot.BotBarn.BrownRecluse.prototype = new BattleBot.BotBarn.SpiderClass();
 
-// module.exports = BattleBot;
+module.exports = BattleBot;

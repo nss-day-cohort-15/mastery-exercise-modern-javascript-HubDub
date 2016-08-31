@@ -1,10 +1,11 @@
 "use strict";
 
-let BattleBot = BattleBot || {};
-BattleBot.Combatants = {};
+let BattleBot = {};
+// let BattleBot = BattleBot || {};
+// BattleBot.Combatants = {};
 
 //base function for player or enemy
-BattleBot.Combatants.Fighters = function() {
+BattleBot.Fighters = function() {
   this.class = null;
   this.weapon = null;
   this.playerName = name || "Fem-Bot";
@@ -25,15 +26,17 @@ BattleBot.Combatants.Fighters = function() {
   };
 };
 
-BattleBot.Combatants.Player = function() {
-};
+let Ted = new BattleBot.Fighters();
+console.log(Ted);
+// BattleBot.Player = function() {
+// };
 
-BattleBot.Combatants.Player.prototype = new BattleBot.Combatants.Fighters();
+// BattleBot.Combatants.Player.prototype = new BattleBot.Combatants.Fighters();
 
-BattleBot.Combatants.Enemy = function() {
+// BattleBot.Combatants.Enemy = function() {
 
-};
+// };
 
-BattleBot.Combatants.Enemy.prototype = new BattleBot.Combatants.Fighters();
+// BattleBot.Combatants.Enemy.prototype = new BattleBot.Combatants.Fighters();
 
-// module.exports = Battlebot;
+module.exports = BattleBot;
