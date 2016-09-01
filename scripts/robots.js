@@ -3,13 +3,17 @@
 //this is the base robot function
 // let BattleBot = BattleBot || {};
 let BattleBot = {};
-// BattleBot.BotBarn = {};
 
-//base for a BattleBot class
+
+//base for a BattleBot class - can get it returnining the inherited name of the class but not the weapon.
 BattleBot.BotClass = function() {
   this.name = "Vanilla";
+  this.weapon = "bad breath";
   this.healthBonus = 0;
   this.attackBonus = 0;
+  this.toString = function(){
+    return this.weapon;
+  };
 };
 
 //Bear Class Bots
@@ -21,13 +25,16 @@ BattleBot.BearClass.prototype = new BattleBot.BotClass();
 
 //two types in the bear class
 BattleBot.BrownBear = function() {
- this.name = "Brown Bear";
+ this.name = "Brownie";
  this.weapon = "claws";
+ // this.toString = function(){
+ //    return this.weapon;
+ //  };
 };
 BattleBot.BrownBear.prototype = new BattleBot.BearClass();
 
 BattleBot.PolarBear = function() {
- this.name = "Polar Bear";
+ this.name = "Paul";
  this.weapon = "fangs";
 };
 BattleBot.PolarBear.prototype = new BattleBot.BearClass();
