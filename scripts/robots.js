@@ -12,7 +12,7 @@ BattleBot.BotClass = function() {
   this.healthBonus = 0;
   this.attackBonus = 0;
   this.toString = function(){
-    return this.weapon;
+    return this.class;
   };
 };
 

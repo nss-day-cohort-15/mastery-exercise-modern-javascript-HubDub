@@ -12,7 +12,10 @@ BattleBot.Fighter = function() {
   this.generateClass = function () {
     let random = Math.round(Math.random() * (this.allowedClasses.length - 1));
     let randomClass = this.allowedClasses[random];
+    console.log("inside generateClass: ", randomClass);
     this.class = randomClass;
+    // this.class = new BattleBotClass.randomClass();
+    return this.class;
   };
   this.class = this.generateClass();
   // this.class = null;

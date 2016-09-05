@@ -1,6 +1,5 @@
 body {
   background-color: tan;
-  /*background-image: url("http://1u88jj3r4db2x4txp44yqfj1.wpengine.netdna-cdn.com/wp-content/uploads/2013/04/mech_hawkenscreenshot3.jpg?w=558");*/
 }
 
 h1, h2 {
@@ -10,10 +9,7 @@ h1, h2 {
 
 .card_button {
   text-decoration: none;
-  /*background-image: url(http://i773.photobucket.com/albums/yy19/farmersgoddess/Animated/mediafile1.gif);*/
-  /*color: #888;*/
   border-radius: 5px;
-  /*display: inline-block;*/
   margin: 10px;
   font-size: 18px;
   font-weight: 600;
@@ -35,10 +31,13 @@ h1, h2 {
   min-width: 250px;
 }
 
-.choose-bot {
-
+#inputPlayerStats, #inputEnemyStats {
+  min-height: 80px;
 }
 
-.battleground {
-
+#gameOver {
+  text-align: center;
+  font-weight: 900;
+  font-size: 20px;
 }
+
