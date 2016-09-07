@@ -32,7 +32,12 @@ h1, h2 {
 }
 
 #inputPlayerStats, #inputEnemyStats {
-  min-height: 80px;
+  min-height: 156px;
+  text-align: center;
+}
+
+#battlePlayerStats, #battleEnemyStats {
+  text-align: center;
 }
 
 #gameOver {
@@ -40,4 +45,3 @@ h1, h2 {
   font-weight: 900;
   font-size: 20px;
 }
-
