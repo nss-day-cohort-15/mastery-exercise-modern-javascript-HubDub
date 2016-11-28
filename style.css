@@ -1,0 +1,47 @@
+body {
+  background-color: tan;
+}
+
+h1, h2 {
+  color: red;
+  text-align: center;
+}
+
+.card_button {
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 5px;
+  min-width: 260px;
+}
+
+.card_link {
+  border: 1px solid black;
+  display: block;
+  text-align: center;
+  min-width: 250px;
+}
+
+.fight {
+  border: 1px solid black;
+  display: block;
+  text-align: center;
+  min-width: 250px;
+}
+
+#inputPlayerStats, #inputEnemyStats {
+  min-height: 156px;
+  text-align: center;
+}
+
+#battlePlayerStats, #battleEnemyStats {
+  text-align: center;
+}
+
+#gameOver {
+  text-align: center;
+  font-weight: 900;
+  font-size: 20px;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Battle Dome</title>
+  <link rel="stylesheet" href="bower_components/jasmine-core/lib/jasmine-core/jasmine.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <article id="game-container">
+    <!-- welcome Page -->
+    <div class="welcome-page">
+      <div class="container">
+        <h1>Welcome to the Battledome!</h1>
+        <div class="well">
+          <!-- name input -->
+          <label>Tell me your name:</label>
+          <input type="text" id="getName">
+          <label>What do you want to name your opponent:</label>
+          <input type="text" id="opponentName">
+          <!-- drop down menu for player to choose bot -->
+          <label>Choose your battlebot:</label>
+            <select id="playerClass">
+              <optgroup label="BearBot">
+                <option value="BrownBear">Brown Bear</option>
+                <option value="PolarBear">Polar Bear</option>
+              </optgroup>
+              <optgroup label="HumanoidBot">
+                <option value="Android">Android</option>
+                <option value="Elf">Elf</option>
+              </optgroup>
+              <optgroup label="SpiderBot">
+                <option value="BlackWidow">Black Widow</option>
+                <option value="BrownRecluse">Brown Recluse</option>
+              </optgroup>
+            </select>
+            <!-- drop down menu for player to choose enemy bot -->
+            <label>Choose your enemy's battlebot:</label>
+            <select id="enemyClass">
+              <optgroup label="BearBot">
+                <option value="BrownBear">Brown Bear</option>
+                <option value="PolarBear">Polar Bear</option>
+              </optgroup>
+              <optgroup label="HumanoidBot">
+                <option value="Android">Android</option>
+                <option value="Elf">Elf</option>
+              </optgroup>
+              <optgroup label="SpiderBot">
+                <option value="BlackWidow">Black Widow</option>
+                <option value="BrownRecluse">Brown Recluse</option>
+              </optgroup>
+            </select>
+            <!-- <div class="btn-group">
+            couldn't get the bootstrapping to work the way I wanted. may play with this later.
+            <button class="btn btn-default btn-lg dropdown-toggle" id="playerClassButton" data-toggle="dropdown">Battle Bot:
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li id="brownBear"><a href="#">brown bear</a></li>
+              <li id="playerPolarBear"><a href="#">polar bear</a></li>
+              <li id="playerAndroid"><a href="#">android</a></li>
+              <li id="playerElf"><a href="#">elf</a></li>
+              <li id="playerBlackWidow"><a href="#">black widow</a></li>
+              <li id="playerBrownRecluse"><a href="#">brown recluse</a></li>
+            </ul>
+          </div> -->
+          <!-- <div id="displayPlayerClass"></div> -->
+          <button id="name_button" class="card_link btn btn-big btn-warning center-block">
+            <a
+              href="#"
+              next="choose-bot">
+              <span class="btn__prompt"></span>
+              <span class="btn__text">To the Battle Arena</span>
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- battledome page -->
+    <div id="fight-page" class="battleground">
+      <h2>Ladies and Gentlemen, boys and girls:</h2>
+      <h1>Dying Time's Here</h1>
+      <div id="battleHere">
+        <div id="inputPlayerStats" class="well col-md-6"></div>
+        <div id="inputEnemyStats" class="well col-md-6"></div>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div id="battlePlayerStats" class="col-md-4"></div>
+          <div id="battleEnemyStats" class="col-md-4"></div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+      <button id="fight" class="btn big-btn btn-danger center-block">FIGHT!!</button>
+      <div id="gameOver"></div>
+    </div>
+  </article>
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="dist/app.js"></script>
+</body>
+</html>
